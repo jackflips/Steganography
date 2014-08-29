@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD75558019ABC3B1003757D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75557F19ABC3B1003757D7 /* Foundation.framework */; };
+		AD75558219ABC3B1003757D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75558119ABC3B1003757D7 /* CoreGraphics.framework */; };
+		AD75558419ABC3B1003757D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75558319ABC3B1003757D7 /* UIKit.framework */; };
+		AD75558A19ABC3B1003757D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD75558819ABC3B1003757D7 /* InfoPlist.strings */; };
+		AD75558C19ABC3B1003757D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75558B19ABC3B1003757D7 /* main.m */; };
+		AD75559019ABC3B1003757D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75558F19ABC3B1003757D7 /* AppDelegate.m */; };
+		AD75559319ABC3B1003757D7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD75559119ABC3B1003757D7 /* Main_iPhone.storyboard */; };
+		AD75559619ABC3B1003757D7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD75559419ABC3B1003757D7 /* Main_iPad.storyboard */; };
+		AD75559919ABC3B1003757D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75559819ABC3B1003757D7 /* ViewController.m */; };
+		AD75559B19ABC3B1003757D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD75559A19ABC3B1003757D7 /* Images.xcassets */; };
+		AD7555A219ABC3B1003757D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7555A119ABC3B1003757D7 /* XCTest.framework */; };
+		AD7555A319ABC3B1003757D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75557F19ABC3B1003757D7 /* Foundation.framework */; };
+		AD7555A419ABC3B1003757D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD75558319ABC3B1003757D7 /* UIKit.framework */; };
+		AD7555AC19ABC3B1003757D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD7555AA19ABC3B1003757D7 /* InfoPlist.strings */; };
+		AD7555AE19ABC3B1003757D7 /* stegTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7555AD19ABC3B1003757D7 /* stegTests.m */; };
+		AD7555B919AD0706003757D7 /* Steganographer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7555B819AD0706003757D7 /* Steganographer.m */; };
+		AD7555BB19AD0CA5003757D7 /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7555BA19AD0CA5003757D7 /* ghost.png */; };
+		AD7555C119AD8AF7003757D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD7555BF19AD8AF7003757D7 /* InfoPlist.strings */; };
+		AD7555C319AD8B04003757D7 /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD7555C219AD8B04003757D7 /* desert.jpg */; };
+		AD7555C519AE75E7003757D7 /* rjf_rooster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD7555C419AE75E7003757D7 /* rjf_rooster.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD7555A519ABC3B1003757D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD75557419ABC3B1003757D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD75557B19ABC3B1003757D7;
+			remoteInfo = steg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD75557C19ABC3B1003757D7 /* steg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = steg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD75557F19ABC3B1003757D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD75558119ABC3B1003757D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD75558319ABC3B1003757D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD75558719ABC3B1003757D7 /* steg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "steg-Info.plist"; sourceTree = "<group>"; };
+		AD75558919ABC3B1003757D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD75558B19ABC3B1003757D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD75558D19ABC3B1003757D7 /* steg-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "steg-Prefix.pch"; sourceTree = "<group>"; };
+		AD75558E19ABC3B1003757D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD75558F19ABC3B1003757D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD75559219ABC3B1003757D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AD75559519ABC3B1003757D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AD75559719ABC3B1003757D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD75559819ABC3B1003757D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD75559A19ABC3B1003757D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD7555A019ABC3B1003757D7 /* stegTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stegTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7555A119ABC3B1003757D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD7555A919ABC3B1003757D7 /* stegTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "stegTests-Info.plist"; sourceTree = "<group>"; };
+		AD7555AB19ABC3B1003757D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD7555AD19ABC3B1003757D7 /* stegTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stegTests.m; sourceTree = "<group>"; };
+		AD7555B719AD0706003757D7 /* Steganographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Steganographer.h; sourceTree = "<group>"; };
+		AD7555B819AD0706003757D7 /* Steganographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Steganographer.m; sourceTree = "<group>"; };
+		AD7555BA19AD0CA5003757D7 /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
+		AD7555C019AD8AF7003757D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AD7555C219AD8B04003757D7 /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = "<group>"; };
+		AD7555C419AE75E7003757D7 /* rjf_rooster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rjf_rooster.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD75557919ABC3B1003757D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75558219ABC3B1003757D7 /* CoreGraphics.framework in Frameworks */,
+				AD75558419ABC3B1003757D7 /* UIKit.framework in Frameworks */,
+				AD75558019ABC3B1003757D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75559D19ABC3B1003757D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7555A219ABC3B1003757D7 /* XCTest.framework in Frameworks */,
+				AD7555A419ABC3B1003757D7 /* UIKit.framework in Frameworks */,
+				AD7555A319ABC3B1003757D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD75557319ABC3B1003757D7 = {
+			isa = PBXGroup;
+			children = (
+				AD7555BE19AD8AF7003757D7 /* en.lproj */,
+				AD75558519ABC3B1003757D7 /* steg */,
+				AD7555A719ABC3B1003757D7 /* stegTests */,
+				AD75557E19ABC3B1003757D7 /* Frameworks */,
+				AD75557D19ABC3B1003757D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD75557D19ABC3B1003757D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD75557C19ABC3B1003757D7 /* steg.app */,
+				AD7555A019ABC3B1003757D7 /* stegTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD75557E19ABC3B1003757D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD75557F19ABC3B1003757D7 /* Foundation.framework */,
+				AD75558119ABC3B1003757D7 /* CoreGraphics.framework */,
+				AD75558319ABC3B1003757D7 /* UIKit.framework */,
+				AD7555A119ABC3B1003757D7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD75558519ABC3B1003757D7 /* steg */ = {
+			isa = PBXGroup;
+			children = (
+				AD7555C419AE75E7003757D7 /* rjf_rooster.jpg */,
+				AD7555C219AD8B04003757D7 /* desert.jpg */,
+				AD7555BA19AD0CA5003757D7 /* ghost.png */,
+				AD75558E19ABC3B1003757D7 /* AppDelegate.h */,
+				AD75558F19ABC3B1003757D7 /* AppDelegate.m */,
+				AD75559119ABC3B1003757D7 /* Main_iPhone.storyboard */,
+				AD75559419ABC3B1003757D7 /* Main_iPad.storyboard */,
+				AD75559719ABC3B1003757D7 /* ViewController.h */,
+				AD75559819ABC3B1003757D7 /* ViewController.m */,
+				AD7555B719AD0706003757D7 /* Steganographer.h */,
+				AD7555B819AD0706003757D7 /* Steganographer.m */,
+				AD75559A19ABC3B1003757D7 /* Images.xcassets */,
+				AD75558619ABC3B1003757D7 /* Supporting Files */,
+			);
+			path = steg;
+			sourceTree = "<group>";
+		};
+		AD75558619ABC3B1003757D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD75558719ABC3B1003757D7 /* steg-Info.plist */,
+				AD75558819ABC3B1003757D7 /* InfoPlist.strings */,
+				AD75558B19ABC3B1003757D7 /* main.m */,
+				AD75558D19ABC3B1003757D7 /* steg-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD7555A719ABC3B1003757D7 /* stegTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD7555AD19ABC3B1003757D7 /* stegTests.m */,
+				AD7555A819ABC3B1003757D7 /* Supporting Files */,
+			);
+			path = stegTests;
+			sourceTree = "<group>";
+		};
+		AD7555A819ABC3B1003757D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD7555A919ABC3B1003757D7 /* stegTests-Info.plist */,
+				AD7555AA19ABC3B1003757D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD7555BE19AD8AF7003757D7 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AD7555BF19AD8AF7003757D7 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = steg/en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD75557B19ABC3B1003757D7 /* steg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD7555B119ABC3B1003757D7 /* Build configuration list for PBXNativeTarget "steg" */;
+			buildPhases = (
+				AD75557819ABC3B1003757D7 /* Sources */,
+				AD75557919ABC3B1003757D7 /* Frameworks */,
+				AD75557A19ABC3B1003757D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = steg;
+			productName = steg;
+			productReference = AD75557C19ABC3B1003757D7 /* steg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD75559F19ABC3B1003757D7 /* stegTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD7555B419ABC3B1003757D7 /* Build configuration list for PBXNativeTarget "stegTests" */;
+			buildPhases = (
+				AD75559C19ABC3B1003757D7 /* Sources */,
+				AD75559D19ABC3B1003757D7 /* Frameworks */,
+				AD75559E19ABC3B1003757D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD7555A619ABC3B1003757D7 /* PBXTargetDependency */,
+			);
+			name = stegTests;
+			productName = stegTests;
+			productReference = AD7555A019ABC3B1003757D7 /* stegTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD75557419ABC3B1003757D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = metacupcake;
+				TargetAttributes = {
+					AD75559F19ABC3B1003757D7 = {
+						TestTargetID = AD75557B19ABC3B1003757D7;
+					};
+				};
+			};
+			buildConfigurationList = AD75557719ABC3B1003757D7 /* Build configuration list for PBXProject "steg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD75557319ABC3B1003757D7;
+			productRefGroup = AD75557D19ABC3B1003757D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD75557B19ABC3B1003757D7 /* steg */,
+				AD75559F19ABC3B1003757D7 /* stegTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD75557A19ABC3B1003757D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75559619ABC3B1003757D7 /* Main_iPad.storyboard in Resources */,
+				AD7555C119AD8AF7003757D7 /* InfoPlist.strings in Resources */,
+				AD7555BB19AD0CA5003757D7 /* ghost.png in Resources */,
+				AD75559B19ABC3B1003757D7 /* Images.xcassets in Resources */,
+				AD7555C319AD8B04003757D7 /* desert.jpg in Resources */,
+				AD7555C519AE75E7003757D7 /* rjf_rooster.jpg in Resources */,
+				AD75559319ABC3B1003757D7 /* Main_iPhone.storyboard in Resources */,
+				AD75558A19ABC3B1003757D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75559E19ABC3B1003757D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7555AC19ABC3B1003757D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD75557819ABC3B1003757D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD75559919ABC3B1003757D7 /* ViewController.m in Sources */,
+				AD7555B919AD0706003757D7 /* Steganographer.m in Sources */,
+				AD75559019ABC3B1003757D7 /* AppDelegate.m in Sources */,
+				AD75558C19ABC3B1003757D7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD75559C19ABC3B1003757D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7555AE19ABC3B1003757D7 /* stegTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD7555A619ABC3B1003757D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD75557B19ABC3B1003757D7 /* steg */;
+			targetProxy = AD7555A519ABC3B1003757D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD75558819ABC3B1003757D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD75558919ABC3B1003757D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD75559119ABC3B1003757D7 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD75559219ABC3B1003757D7 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AD75559419ABC3B1003757D7 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD75559519ABC3B1003757D7 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AD7555AA19ABC3B1003757D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD7555AB19ABC3B1003757D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD7555BF19AD8AF7003757D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD7555C019AD8AF7003757D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD7555AF19ABC3B1003757D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD7555B019ABC3B1003757D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD7555B219ABC3B1003757D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steg/steg-Prefix.pch";
+				INFOPLIST_FILE = "steg/steg-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD7555B319ABC3B1003757D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steg/steg-Prefix.pch";
+				INFOPLIST_FILE = "steg/steg-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD7555B519ABC3B1003757D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/steg.app/steg";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steg/steg-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "stegTests/stegTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD7555B619ABC3B1003757D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/steg.app/steg";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steg/steg-Prefix.pch";
+				INFOPLIST_FILE = "stegTests/stegTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD75557719ABC3B1003757D7 /* Build configuration list for PBXProject "steg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7555AF19ABC3B1003757D7 /* Debug */,
+				AD7555B019ABC3B1003757D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD7555B119ABC3B1003757D7 /* Build configuration list for PBXNativeTarget "steg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7555B219ABC3B1003757D7 /* Debug */,
+				AD7555B319ABC3B1003757D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD7555B419ABC3B1003757D7 /* Build configuration list for PBXNativeTarget "stegTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD7555B519ABC3B1003757D7 /* Debug */,
+				AD7555B619ABC3B1003757D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD75557419ABC3B1003757D7 /* Project object */;
+}
